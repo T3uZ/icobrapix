@@ -1,0 +1,115 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Cores */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --tertiary-color: #f8f9fa;
+  --light-color: #ffffff;
+  --dark-color: #343a40;
+}
+
+/* Estilo geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--tertiary-color);
+  color: var(--dark-color);
+  margin: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--light-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+/* Estilo do formulário */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--light-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: #0069d9;
+}
+
+/* Estilo dos ícones */
+i {
+  font-size: 20px;
+  margin-right: 5px;
+  color: var(--secondary-color);
+}
+
+/* Estilo das mensagens de erro */
+.alert {
+  background-color: #f2dede;
+  color: #a94442;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+/* Estilo das mensagens de sucesso */
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+}
